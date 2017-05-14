@@ -24,7 +24,8 @@ import time
 import traceback
 
 CARDS_PATH = '/proc/asound/cards'
-VOICEHAT_ID = 'googlevoicehat'
+VOICEHAT_ID = 'bcm2835'
+#VOICEHAT_ID = 'googlevoicehat'
 
 SERVICE_NAME = 'voice-recognizer'
 ACTIVE_STR = 'ActiveState=active'

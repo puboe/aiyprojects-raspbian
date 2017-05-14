@@ -114,13 +114,13 @@ def main():
                         help='Name of the audio input device')
     parser.add_argument('-O', '--output-device', default='default',
                         help='Name of the audio output device')
-    parser.add_argument('-T', '--trigger', default='gpio',
+    parser.add_argument('-T', '--trigger', default='clap',
                         help='Trigger to use {\'clap\', \'gpio\'}')
     parser.add_argument('--cloud-speech', action='store_true',
                         help='Use the Cloud Speech API instead of the Assistant API')
     parser.add_argument('-L', '--language', default='en-US',
                         help='Language code to use for speech (default: en-US)')
-    parser.add_argument('-l', '--led-fifo', default='/tmp/status-led',
+    parser.add_argument('-l', '--led-fifo', default='/dev/null',
                         help='Status led control fifo')
     parser.add_argument('-p', '--pid-file', default=PID_FILE,
                         help='File containing our process id for monitoring')
